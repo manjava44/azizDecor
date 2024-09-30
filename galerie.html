@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tapisserie Artisanale - Galerie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e0e0e0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+        .gallery a {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .gallery a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AZIZ DECOR</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produit.html">Produits</a></li>
+                <li><a href="video.html">Video</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="galerie">
+        <h2>Galerie</h2>
+        <div class="gallery">
+            <a href="cs6.jpg" data-lightbox="gallery"><img src="cs6.jpg" alt="Tapisserie 1"></a>
+            <a href="cs7.jpg" data-lightbox="gallery"><img src="cs7.jpg" alt="Tapisserie 2"></a>
+            <a href="image3.jpg" data-lightbox="gallery"><img src="image3.jpg" alt="Tapisserie 3"></a>
+            <a href="image4.jpg" data-lightbox="gallery"><img src="image4.jpg" alt="Tapisserie 4"></a>
+            <a href="image5.jpg" data-lightbox="gallery"><img src="image5.jpg" alt="Tapisserie 5"></a>
+            <a href="image6.jpg" data-lightbox="gallery"><img src="image6.jpg" alt="Tapisserie 6"></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 @AZIZ.DECOR</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
